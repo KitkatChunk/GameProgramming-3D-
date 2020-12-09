@@ -8,7 +8,7 @@ public class CountDown : MonoBehaviour
     public GameObject countDown;
     public AudioSource getReady;
     public AudioSource goAudio;
-    public GameObject lapTimer;
+    //public GameObject lapTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,6 @@ public class CountDown : MonoBehaviour
         yield return new WaitForSeconds(1);
         countDown.SetActive(false);
         goAudio.Play();
-        lapTimer.SetActive(true);
+        //lapTimer.SetActive(true);
     }
 }
