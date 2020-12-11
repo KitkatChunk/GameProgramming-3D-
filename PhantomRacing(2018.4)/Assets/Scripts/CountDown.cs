@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class CountDown : MonoBehaviour
 {
     public GameObject countDown;
+    public GameObject lapTimeManager;
     public AudioSource getReady;
     public AudioSource goAudio;
+    public GameObject barrier;
     //public GameObject lapTimer;
 
     // Start is called before the first frame update
@@ -34,6 +36,7 @@ public class CountDown : MonoBehaviour
         yield return new WaitForSeconds(1);
         countDown.SetActive(false);
         goAudio.Play();
-        //lapTimer.SetActive(true);
+        lapTimeManager.SetActive(true);
+        barrier.SetActive(false);
     }
 }
