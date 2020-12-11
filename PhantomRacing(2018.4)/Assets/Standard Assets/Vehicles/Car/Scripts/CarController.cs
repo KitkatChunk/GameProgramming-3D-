@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.Networking;
 
 #pragma warning disable 649
 namespace UnityStandardAssets.Vehicles.Car
@@ -18,7 +17,7 @@ namespace UnityStandardAssets.Vehicles.Car
         KPH
     }
 
-    public class CarController : NetworkBehaviour
+    public class CarController : MonoBehaviour
     {
         [SerializeField] private CarDriveType m_CarDriveType = CarDriveType.FourWheelDrive;
         [SerializeField] private WheelCollider[] m_WheelColliders = new WheelCollider[4];
@@ -130,9 +129,6 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
-           
-             
-           
             for (int i = 0; i < 4; i++)
             {
                 Quaternion quat;
@@ -141,7 +137,6 @@ namespace UnityStandardAssets.Vehicles.Car
                 m_WheelMeshes[i].transform.position = position;
                 m_WheelMeshes[i].transform.rotation = quat;
             }
-            
 
             //clamp input values
             steering = Mathf.Clamp(steering, -1, 1);
