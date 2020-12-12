@@ -2569,6 +2569,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 388337457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &401136715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401136717}
+  - component: {fileID: 401136716}
+  m_Layer: 0
+  m_Name: Wind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!182 &401136716
+WindZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401136715}
+  m_Enabled: 1
+  m_Mode: 0
+  m_Radius: 20
+  m_WindMain: 1.5
+  m_WindTurbulence: 1.5
+  m_WindPulseMagnitude: 0.5
+  m_WindPulseFrequency: 0.03
+--- !u!4 &401136717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401136715}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.619007, y: 15.752955, z: -5.0260963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &406226527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13687,6 +13732,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3644495232424575923, guid: 17a6fb16531e4304c977d8ba43ecb19e,
+        type: 3}
+      propertyPath: m_RenderingPath
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3644495232424575923, guid: 17a6fb16531e4304c977d8ba43ecb19e,
+        type: 3}
+      propertyPath: far clip plane
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3644495232424575923, guid: 17a6fb16531e4304c977d8ba43ecb19e,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3644495232424575923, guid: 17a6fb16531e4304c977d8ba43ecb19e,
+        type: 3}
+      propertyPath: field of view
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3644495232436204659, guid: 17a6fb16531e4304c977d8ba43ecb19e,
         type: 3}
       propertyPath: m_Target
@@ -13694,6 +13759,25 @@ PrefabInstance:
       objectReference: {fileID: 980900314}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6fb16531e4304c977d8ba43ecb19e, type: 3}
+--- !u!1 &3644495232424836843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3644495232425951633, guid: 17a6fb16531e4304c977d8ba43ecb19e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3644495232424836842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3644495232424836844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3644495232424836843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 5adab8c23044f4a42aa7db130e1b8070, type: 2}
 --- !u!1001 &5138930968882987949
 PrefabInstance:
   m_ObjectHideFlags: 0
