@@ -558,7 +558,7 @@ MonoBehaviour:
     geometryMode: 2
     materialBranch: {fileID: 0}
     materialBreak: {fileID: 0}
-    materialFrond: {fileID: 2100000, guid: 032ad1b94e27e1041a630e9862184942, type: 2}
+    materialFrond: {fileID: 0}
     height: {x: 6.6230316, y: 8.460208}
     radius: 0.5
     radiusCurve:
