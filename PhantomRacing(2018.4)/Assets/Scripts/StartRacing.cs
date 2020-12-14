@@ -5,9 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class StartRacing : MonoBehaviour
 {
-    public void NextScene()
+    public void Startmenu() 
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("StartMenu");
     }
+    public void Lvl1()
+    {
+        SceneManager.LoadScene("Level_1_Scene");
+    }
+    public void Lvl2()
+    {
+        SceneManager.LoadScene("Level_2_Scene");
+    }
+    public void Lvl3()
+    {
+        SceneManager.LoadScene("Level_3_Scene");
+    }
+
 
 }
